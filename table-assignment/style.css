@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+table {
+    border: 1px solid #452068;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+  }
+
+  caption {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
+    color:#150D0D;
+  }
+
+  thead {
+    height: 70px;
+    color: #150D0D;
+    background-color: #ADEFD1FF;
+  }
+
+  th,td {
+    padding: 7px;
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+  tbody td {
+    text-align: center;
+  }
+
+  tbody tr:nth-child(1), tbody tr:nth-child(4) {
+    border-bottom: 1px solid grey;
+  }
+
+  @media screen and (max-width: 450px){
+    caption {
+        font-size: 14px;
+        text-align: center;
+      }
+
+    table {
+        font-size: 12px;
+    }
+  }
+
+ 
